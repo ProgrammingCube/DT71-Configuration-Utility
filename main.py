@@ -12,12 +12,22 @@ class mainWindow(QtWidgets.QMainWindow, form_class):
     def __init__(self, parent=None):
         QtWidgets.QMainWindow.__init__(self, parent)
         self.setupUi(self)
+        self.resetDeviceButton.clicked.connect(self.resetDeviceButton_clicked)
+        self.setDeviceButton.clicked.connect(self.setDeviceButton_clicked)
 
         self.initUI()
     
     def initUI(self):
         #self.statusBar().showMessage('When you : bottom text')
         self.show()
+    
+    @pyqtSlot()
+    def resetDeviceButton_clicked(self):
+        print("Reset Button clicked!")
+
+    @pyqtSlot()
+    def setDeviceButton_clicked(self):
+        print("Set Button clicked!")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

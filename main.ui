@@ -296,7 +296,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="resetDevicebutton">
+   <widget class="QPushButton" name="resetDeviceButton">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -347,6 +347,19 @@
      </property>
     </item>
    </widget>
+   <widget class="QPushButton" name="setDeviceButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>260</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Set Device</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -354,7 +367,7 @@
      <x>0</x>
      <y>0</y>
      <width>796</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOpen_File">
